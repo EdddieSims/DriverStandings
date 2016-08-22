@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="dataSourceStorageLocal">
+    <data-source name="MySQL - driver@localhost" uuid="ce7b06f3-87ab-4650-9167-bdd5acc74d73">
+      <secret-storage>master_key</secret-storage>
+      <user-name>root</user-name>
+      <schema-pattern>driver.*</schema-pattern>
+      <default-schemas>webstore.*</default-schemas>
+    </data-source>
+  </component>
+</project>

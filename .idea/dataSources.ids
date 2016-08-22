@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component name="dataSourceStorage">
+  <data-source name="MySQL - driver@localhost" uuid="ce7b06f3-87ab-4650-9167-bdd5acc74d73">
+    <database-info product="MySQL" version="5.6.17" jdbc-version="4.0" driver-name="MySQL Connector Java" driver-version="mysql-connector-java-5.1.35 ( Revision: 5fb9c5849535c13917c2cf9baaece6ef9693ef27 )">
+      <extra-name-characters>#@</extra-name-characters>
+      <identifier-quote-string>`</identifier-quote-string>
+    </database-info>
+    <case-sensitivity plain-identifiers="lower" quoted-identifiers="lower"/>
+    <database-model serializer="dbm" rdbms="MYSQL" format-version="2.5">
+      <schema id="1" name="driver"/>
+      <table id="2" parent="1" name="car"/>
+      <table id="3" parent="1" name="driver"/>
+      <table id="4" parent="1" name="engine"/>
+      <table id="5" parent="1" name="leaderboard"/>
+      <table id="6" parent="1" name="race"/>
+      <table id="7" parent="1" name="sponsor"/>
+      <table id="8" parent="1" name="standings"/>
+      <table id="9" parent="1" name="team_mate"/>
+      <table id="10" parent="1" name="track"/>
+      <column id="11" parent="2" name="id">
+        <mandatory>1</mandatory>
+        <data-type>bigint(20)</data-type>
+      </column>
+      <column id="12" parent="2" name="make">
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="13" parent="2" name="model">
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="14" parent="2" name="year">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <key id="15" parent="2" name="PRIMARY">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+      <column id="16" parent="3" name="id">
+        <mandatory>1</mandatory>
+        <data-type>bigint(20)</data-type>
+      </column>
+      <column id="17" parent="3" name="behind">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="18" parent="3" name="country">
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="19" parent="3" name="name">
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="20" parent="3" name="num_of_wins">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="21" parent="3" name="points">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="22" parent="3" name="surname">
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="23" parent="3" name="team">
+        <data-type>varchar(255)</data-type>
+      </column>
+      <key id="24" parent="3" name="PRIMARY">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+      <column id="25" parent="4" name="id">
+        <mandatory>1</mandatory>
+        <data-type>bigint(20)</data-type>
+      </column>
+      <column id="26" parent="4" name="brand">
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="27" parent="4" name="model">
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="28" parent="4" name="num_of_pistons">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="29" parent="4" name="power_output">
+        <mandatory>1</mandatory>
+        <data-type>double</data-type>
+      </column>
+      <key id="30" parent="4" name="PRIMARY">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+      <column id="31" parent="5" name="id">
+        <mandatory>1</mandatory>
+        <data-type>bigint(20)</data-type>
+      </column>
+      <column id="32" parent="5" name="curr_lap">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="33" parent="5" name="curr_lap_time">
+        <mandatory>1</mandatory>
+        <data-type>double</data-type>
+      </column>
+      <column id="34" parent="5" name="fastest_lap_time">
+        <mandatory>1</mandatory>
+        <data-type>double</data-type>
+      </column>
+      <column id="35" parent="5" name="laps_remaining">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="36" parent="5" name="name">
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="37" parent="5" name="surname">
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="38" parent="5" name="total_laps">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="39" parent="5" name="total_race_time">
+        <mandatory>1</mandatory>
+        <data-type>double</data-type>
+      </column>
+      <key id="40" parent="5" name="PRIMARY">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+      <column id="41" parent="6" name="id">
+        <mandatory>1</mandatory>
+        <data-type>bigint(20)</data-type>
+      </column>
+      <column id="42" parent="6" name="laps">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="43" parent="6" name="track_name">
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="44" parent="6" name="winner_id">
+        <data-type>bigint(20)</data-type>
+      </column>
+      <key id="45" parent="6" name="PRIMARY">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+      <column id="46" parent="7" name="id">
+        <mandatory>1</mandatory>
+        <data-type>bigint(20)</data-type>
+      </column>
+      <column id="47" parent="7" name="logo_colour">
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="48" parent="7" name="name">
+        <data-type>varchar(255)</data-type>
+      </column>
+      <key id="49" parent="7" name="PRIMARY">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+      <column id="50" parent="8" name="id">
+        <mandatory>1</mandatory>
+        <data-type>bigint(20)</data-type>
+      </column>
+      <column id="51" parent="8" name="behind">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="52" parent="8" name="name">
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="53" parent="8" name="num_of_wins">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="54" parent="8" name="points">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="55" parent="8" name="surname">
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="56" parent="8" name="team">
+        <data-type>varchar(255)</data-type>
+      </column>
+      <key id="57" parent="8" name="PRIMARY">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+      <column id="58" parent="9" name="id">
+        <mandatory>1</mandatory>
+        <data-type>bigint(20)</data-type>
+      </column>
+      <column id="59" parent="9" name="behind">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="60" parent="9" name="country">
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="61" parent="9" name="name">
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="62" parent="9" name="num_of_wins">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="63" parent="9" name="points">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="64" parent="9" name="surname">
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="65" parent="9" name="team">
+        <data-type>varchar(255)</data-type>
+      </column>
+      <key id="66" parent="9" name="PRIMARY">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+      <column id="67" parent="10" name="id">
+        <mandatory>1</mandatory>
+        <data-type>bigint(20)</data-type>
+      </column>
+      <column id="68" parent="10" name="country">
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="69" parent="10" name="length">
+        <mandatory>1</mandatory>
+        <data-type>double</data-type>
+      </column>
+      <column id="70" parent="10" name="num_of_turns">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="71" parent="10" name="track_name">
+        <data-type>varchar(255)</data-type>
+      </column>
+      <key id="72" parent="10" name="PRIMARY">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+    </database-model>
+  </data-source>
+</component>
