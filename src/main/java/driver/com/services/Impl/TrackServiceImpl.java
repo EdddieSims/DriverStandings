@@ -4,12 +4,14 @@ import driver.com.domain.Track;
 import driver.com.repositories.TrackRepository;
 import driver.com.services.TrackService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 
 /**
  * Created by Edmund.Simons on 2016/08/10.
  */
+@Service
 public class TrackServiceImpl implements TrackService
 {
     @Autowired

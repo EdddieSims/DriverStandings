@@ -4,12 +4,14 @@ import driver.com.domain.Leaderboard;
 import driver.com.repositories.LeaderboardRepository;
 import driver.com.services.LeaderboardService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 
 /**
  * Created by Edmund.Simons on 2016/08/10.
  */
+@Service
 public class LeaderboardServiceImpl implements LeaderboardService
 {
     @Autowired

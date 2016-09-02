@@ -4,12 +4,14 @@ import driver.com.domain.Sponsor;
 import driver.com.repositories.SponsorRepository;
 import driver.com.services.SponsorService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 
 /**
  * Created by Edmund.Simons on 2016/08/10.
  */
+@Service
 public class SponsorServiceImpl implements SponsorService
 {
     @Autowired

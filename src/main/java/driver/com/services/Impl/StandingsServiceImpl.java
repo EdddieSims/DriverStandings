@@ -4,12 +4,14 @@ import driver.com.domain.Standings;
 import driver.com.repositories.StandingsRepository;
 import driver.com.services.StandingsService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 
 /**
  * Created by Edmund.Simons on 2016/08/10.
  */
+@Service
 public class StandingsServiceImpl implements StandingsService
 {
     @Autowired

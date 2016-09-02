@@ -35,12 +35,12 @@ public class DriverCRUDTest extends AbstractTestNGSpringContextTests
     public void create() throws Exception
     {
         raceDriver = new HashMap<String, String>();
-        raceDriver.put("name","Nico");
-        raceDriver.put("surname","Ros");
-        raceDriver.put("country","Germany");
+        raceDriver.put("name","Lewis");
+        raceDriver.put("surname","Hamilton");
+        raceDriver.put("country","Great Brittan");
         raceDriver.put("team","Mercedes AMG");
 
-        formulaOneDriver = DriverFactory.createDriver(raceDriver, 25, 0, 1);
+        formulaOneDriver = DriverFactory.createDriver(raceDriver, 0, 0, 0);
         repository.save(formulaOneDriver);
         this.id = formulaOneDriver.getId();
         System.out.println(this.id);

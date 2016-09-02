@@ -4,12 +4,14 @@ import driver.com.domain.Race;
 import driver.com.repositories.RaceRepository;
 import driver.com.services.RaceService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 
 /**
  * Created by Edmund.Simons on 2016/08/10.
  */
+@Service
 public class RaceServiceImpl implements RaceService
 {
     @Autowired
